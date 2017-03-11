@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="background" tilewidth="32" tileheight="32">
+  <image source="desert.png" width="960" height="640"/>
+ </tileset>
+ <tileset firstgid="601" name="level_1" tilewidth="32" tileheight="32">
+  <image source="levelResource.png" width="1280" height="640"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1401" name="collidablesTileSet" tilewidth="32" tileheight="32">
+  <image source="collidablesTileSet.png" width="192" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collidable" value="false"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJyd1WWQVmUYBmA2KIkFlmXp2l1qF1i6O5feXcogRTrFAimRBjsAAWmxYxQwaJVSVFJpgxId6bYuZj7Gzx2YQX9c93nPnOd5n3nP+XFC0qVLF0oY4aQnAxnJRGbuIAtZyUZ2IshBTnIRSW6iyEM0eclHfgpQkEIUpghFKUZxYogljhKUpBSlKUM8CZSlHOVJpAIVqURlqlCValSnBjWpRW3qUJd61KcBDWlEY5rQlGY0J4kWtKQVrWlDW9qRTAqptKcDHelEZ+7kLu7mHrrQlW50pwc9uZde3Edv+tCXfvRnAAMZxGCGMJRh3M9wHuBBHuJhHmEEI3mUUYxmDGMZx2OM53EmMJFJTGYKU5nGdGbwBE/yFE/zDM/yHM/zAi8yk1nM5iXmMJd5vMx8FrCQRSxmCUsJYRmv8hqv8wZv8hZv8w7v8l6g/n0+YDkrWMmHfMTHfMIqVrOGtaxjPRsCe9ywkU1sZgtb+YIv2cZXfB2o3c4OdrKL3ezhW75jL/vYzwEOcojDaWZed4SjHOM4J/iZk/zCr0G1pzjNGc5yjvNc4CKXuMwVrnLtJvNuCBVhhJOeDGQkE5lD/l2bTWQnghzkJBeR5CaKPESTl3xp+gsF3RcVxShODLHEUYKSafriRQJlKUd5EqlARSpRmSpUDfRWD7n1mW9XkmhBS1rRmja0pR3JpJBK+9uY10V0pRvd6UHPQF+vwLW36ENf+tGfAQxkEIMZwlCGBXqG32L2CDEy8GyUGM0YxgbVjw+sJ4iJTGIyU5jKNKYz4z+8z5liFrMDPXPEXOYF7ueLBSxkEYtZwlJeYdn//HbLxQpW3qR/lVjNGtayjvVs4FM+43M2sonNbGFr0F7bgtbfiO3sYCe72M2eoJq9Yh/7OcBBDnGY7/mBH/mJIxzlGMc5EdjnZJqz/CZOcZoznOUc57nARS5xmStc5Rq/8wd/8tf1jfz4QwgljHDSh/4zJ1PQOot1VrKRnQhykJNcRJKbKPIQTV7ykZ8CFKQQhSlCUYpRnBhiiaMEJSlFacoQTwJlKUd5EqlARSpRmSpUpRrVqUFNalGbOtSlHvVpQEMa0ZgmNKUZzUmiBS1pRWva0JZ2JJNCKu3pQEc60Zm/AWUf2Tg=
+  </data>
+ </layer>
+ <layer name="firstLayer" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytldlNw0AQhhfbFXD0xFECZwmQQAWRgHQACVQQieOBd0igBY4WOFoAPousZNYzu2uvf+mTVuPR/PaMNWvMn1YLY9ZgHTYKU9NxbswJnMIQNrN6jq+OFt/nfAA96Bf1uld4XcMN3Hp83Tqh+BnncxjBWPB9xusFXuHN4+vWCcXvOT/AFGaC7zdeP2B4tiA81+qE4rHzswo9l/ItVcXOr600X21+d4WfVGnz68rX5le/t9oDtx9a/ba+g8j5SfXLd7Lxbc47sAt78/fdyupxmz9J8B1k//sWg9Tnpr6TBF/b5x7/Uh8O4Shv/r1NsX0e4TWGC7jM6/PR5tjW12qK1wwe4SnX833/fKnQfebqHa8P+ISvBF/pPpMYzme5SM4SLMNKwv7R7jNp73e1g8s62n0m7f0ud782g9h7u2u5e9/qF9/zswM=
+  </data>
+ </layer>
+ <objectgroup name="monsterObject">
+  <object name="monster" x="76" y="498"/>
+ </objectgroup>
+ <layer name="secondLayer" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4AysIeJgWEvFO9jop+9T4B2PYXiZ3S0l4eZgYEXivmY6WevCdAuUyg2o6O9o2DkgoQBSmcDZe8oGAXUBADq5Qh/
+  </data>
+ </layer>
+ <objectgroup name="princessObject">
+  <object name="princess" x="880" y="203"/>
+ </objectgroup>
+ <layer name="collidable" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzdVEEOhDAIbJr4yPoTvey2L1djyLKTjlCtHiQhJKUyQxkJYbdp+Hc0K2/d856nGMIY/fm34+Y1Vx7APWtbrRlqzw/gftZa3xO4mm8t3tWv8GWxtV/93YaBLrqp9ZXU+Rh/HLGGzll6ZHy1ZfUORXHM4AX4t+gG+0X+2BeLV/tF/tgXi3if6Qn1zPhbemf6Z3tIovRbOxc/0jvTP+IyZ3Njdby6sXDZ3HrgevbPUR227zz7qBeupduelsjc9Xt6/98Wy5W5s/dcAHabrmU=
+  </data>
+ </layer>
+</map>
